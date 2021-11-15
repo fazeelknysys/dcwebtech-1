@@ -47,31 +47,31 @@ function App() {
           <Preloader />
           {/* Home */}
           <Route exact path="/" component={Home} />
-          <Route exact path="/home-v2" component={Hometwo} />
-          <Route exact path="/home-v3" component={Homethree} />
+          {/* <Route exact path="/home-v2" component={Hometwo} />
+          <Route exact path="/home-v3" component={Homethree} /> */}
           {/* About */}
-          <Route exact path="/about" component={About} />
+          {/* <Route exact path="/about" component={About} /> */}
           {/* Services */}
           <Route exact path="/services" component={Services} />
           <Route exact path="/service-details" component={Servicedetails} />
           {/* Pages */}
           <Route exact path="/whyus" component={Whyus} />
-          <Route exact path="/team" component={Team} />
-          <Route exact path="/team-details/:id" component={props => (<Teamdetails {...props} key={window.location.pathname} />)} />
+          {/* <Route exact path="/team" component={Team} /> */}
+          {/* <Route exact path="/team-details/:id" component={props => (<Teamdetails {...props} key={window.location.pathname} />)} />
           <Route exact path="/portfolio-grid" component={Portfoliogrid} />
           <Route exact path="/portfolio-slider" component={Portfolioslider} />
           <Route exact path="/portfolio-masonry" component={Portfoliomasonry} />
           <Route exact path="/portfolio-details/:id" component={props => (<Portfoliodetails {...props} key={window.location.pathname} />)} />
-          <Route exact path="/faqs" component={Faqs} />
+          <Route exact path="/faqs" component={Faqs} /> */}
           {/* News */}
-          <Route exact path="/blog/search/:query" component={props => (<Blogstandard {...props} key={window.location.pathname} />)} />
+          {/* <Route exact path="/blog/search/:query" component={props => (<Blogstandard {...props} key={window.location.pathname} />)} />
           <Route exact path="/blog/cat/:catId" component={props => (<Blogstandard {...props} key={window.location.pathname} />)} />
           <Route exact path="/blog/user/:userId" component={props => (<Blogstandard {...props} key={window.location.pathname} />)} />
-          <Route exact path="/blog/tag/:tagId" component={props => (<Blogstandard {...props} key={window.location.pathname} />)} />
+          <Route exact path="/blog/tag/:tagId" component={props => (<Blogstandard {...props} key={window.location.pathname} />)} /> */}
 
-          <Route exact path="/blog-standard" component={Blogstandard} />
+          {/* <Route exact path="/blog-standard" component={Blogstandard} />
           <Route exact path="/blog-grid" component={Bloggrid} />
-          <Route exact path="/blog-details/:id" component={props => (<Blogdetails {...props} key={window.location.pathname} />)} />
+          <Route exact path="/blog-details/:id" component={props => (<Blogdetails {...props} key={window.location.pathname} />)} /> */}
           {/* Contact */}
           <Route exact path="/contact" component={Contact} />
         </ScrollToTop>
