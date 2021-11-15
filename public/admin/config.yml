@@ -1,6 +1,7 @@
 backend:
-  name: test-repo
-  #branch:  master
+  name: github
+  repo: https://github.com/omerknysys/dcwebtech
+  branch:  master
 
 media_folder: "public/images"
 public_folder: "images"
