@@ -7,9 +7,22 @@ import Canvas from './Canvas';
 import Mobilemenu from './Mobilemenu';
 
 class Header extends HeaderComponent {
+    
+    constructor(props) {
+        super(props);
+        this.state = {
+          contact: ""
+        };
+    }
     render() {
         const stickyheader = this.state.isTop ? 'sticky' : '';
+        fetch("./logo.json").then(response => response.json())
+        .then((temp1)=> {this.setState({contact:temp1.contact});});
+   
+        
         return (
+
+    
             <header className={"header-absolute sticky-header " + stickyheader} id="can-sticky">
                 <div className="container-fluid custom-container-one">
                     <div className="header-top-area">
@@ -17,7 +30,7 @@ class Header extends HeaderComponent {
                             <div className="col-md-6 col-sm-7">
                                 <ul className="contact-list">
                                     <li><Link to="#">info@appdevtec.com</Link></li>
-                                    <li><Link to="#">716-536-2344</Link></li>
+                                    <li><Link to="#">{this.state.contact}</Link></li>
                                 </ul>
                             </div>
                             <div className="col-md-6 col-sm-5">

@@ -9,6 +9,17 @@ media_folder: static/assets
 public_folder: /assets
 
 collections:
+  - name: contact
+    label: Contact Number 
+    files:
+      - file: public/logo.json
+        name: contact
+        label: 'Contact Settings'
+        fields:
+          - name: "contact"
+            label: "Contact Number"
+            widget: "string"   
+  
   - name: Another blog
     label: Another Blog
     folder: Another blog
@@ -17,7 +28,7 @@ collections:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }
+      - { name: body, label: Body, widget: markdown }  
 
   - name: settings
     label: Settings
@@ -68,3 +79,5 @@ collections:
               - widget: string
                 name: type
                 label: 'Mime Type'
+
+  
