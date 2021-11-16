@@ -8181,3 +8181,7 @@ footer.footer-style-three .copy-right-area a:hover {
   color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
+.banner-text .btn-wrap a:nth-child(2) {
+  background-color:rgb(255, 170, 23);
+  border-color:#fff !important;
+  }
