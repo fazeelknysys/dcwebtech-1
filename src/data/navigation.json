@@ -30,7 +30,8 @@
     {
         "id": 3,
         "linkText": "Services",
-        "child": true,
+        "link":"/services",
+        "child": false,
         "submenu": [
             {
                 "id": 3.1,

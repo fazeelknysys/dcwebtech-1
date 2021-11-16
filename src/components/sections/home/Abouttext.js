@@ -12,8 +12,8 @@ function Abouttext(props) {
                     <div className="col-lg-6 col-md-10">
                         <div className="about-tile-gallery">
                             <img src={process.env.PUBLIC_URL + "/assets/img/tile-gallery/01.jpg"} alt="img" className="image-one" />
-                            <img src={process.env.PUBLIC_URL + "/assets/img/tile-gallery/02.jpg"} alt="img" className="image-two" />
-                            <img src={process.env.PUBLIC_URL + "/assets/img/tile-gallery/03.jpg"} alt="img" className="image-three" />
+                            {/* <img src={process.env.PUBLIC_URL + "/assets/img/tile-gallery/02.jpg"} alt="img" className="image-two" />
+                            <img src={process.env.PUBLIC_URL + "/assets/img/tile-gallery/03.jpg"} alt="img" className="image-three" /> */}
                             <img src={process.env.PUBLIC_URL + "/assets/img/tile-gallery/icon.png"} alt="icon" className="icon" />
                             <img src={process.env.PUBLIC_URL + "/assets/img/tile-gallery/icon-2.png"} alt="icon" className="zero-icon" />
                         </div>

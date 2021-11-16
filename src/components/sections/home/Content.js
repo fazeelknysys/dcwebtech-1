@@ -25,7 +25,7 @@ class Content extends Component {
                 <Skills/>
                 <Portfolio/>
                 <Testimonials/>
-                <Blogpost/>
+                {/* <Blogpost/> */}
             </Fragment>
         );
     }
