@@ -21,7 +21,7 @@ class Content extends Component {
                 <Cta/>
                 <Features/>
                 <Video/>
-                <Team/>
+                {/* <Team/> */}
                 <Skills/>
                 <Portfolio/>
                 <Testimonials/>

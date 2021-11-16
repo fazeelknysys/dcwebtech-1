@@ -8185,3 +8185,7 @@ footer.footer-style-three .copy-right-area a:hover {
   background-color:rgb(255, 170, 23);
   border-color:#fff !important;
   }
+
+  .features-boxes .feature-img img {
+    width: 617px;
+}

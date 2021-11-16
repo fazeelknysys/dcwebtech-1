@@ -14,8 +14,8 @@ class Cta extends Component {
                             <div className="row align-items-end">
                                 <div className="col-lg-5 offset-lg-5 col-md-7 offset-md-5">
                                     <div className="section-title pl-30 left-border">
-                                        <span className="title-tag">Get A Quote</span>
-                                        <h2>We are here for your estimate price.</h2>
+                                        <span className="title-tag">Get Started</span>
+                                        <h2>We are here for you to get your project started.</h2>
                                     </div>
                                 </div>
                             </div>

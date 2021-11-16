@@ -16,8 +16,8 @@ class Header extends HeaderComponent {
                         <div className="row align-items-center">
                             <div className="col-md-6 col-sm-7">
                                 <ul className="contact-list">
-                                    <li><Link to="#">info@example.com</Link></li>
-                                    <li><Link to="#">+988 987 876 87 67 6</Link></li>
+                                    <li><Link to="#">info@appdevtec.com</Link></li>
+                                    <li><Link to="#">716-536-2344</Link></li>
                                 </ul>
                             </div>
                             <div className="col-md-6 col-sm-5">

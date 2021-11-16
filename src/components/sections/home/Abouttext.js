@@ -22,7 +22,7 @@ function Abouttext(props) {
                         <div className="about-text pl-25">
                             <div className="section-title mb-40 left-border">
                                 <span className="title-tag">About us</span>
-                                <h2>Onitir help businesses elevate their value.</h2>
+                                <h2>App helps education elevate there value.</h2>
                             </div>
                             <p>
                                 Over the years, a wide range of developments and innovations in the global IT arena have led

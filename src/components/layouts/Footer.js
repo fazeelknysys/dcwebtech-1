@@ -114,8 +114,8 @@ class Footer extends Component {
                     <div className="copy-right-area">
                         <div className="container">
                             <div className="copyrigt-text d-sm-flex justify-content-between">
-                                <p>Copyright By@<Link to="#">Yourweb</Link> - 2021</p>
-                                <p>Design By@<Link to="#">Yourweb</Link> - 2021</p>
+                                <p>Copyright <Link to="#"> DCWebTech LLC - 2021</Link></p>
+                                <p>Design By <Link to="#"> DCWebTech, LLC.</Link></p>
                             </div>
                         </div>
                     </div>
