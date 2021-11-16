@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Confirmation Mail</title>
+
+</head>
+<body>
+<h2>Confirm your signup</h2>
+
+<p>Follow this link to confirm your user:</p>
+<p><a href="{{ .SiteURL }}/admin/#confirmation_token={{ .Token }}">Confirm your mail</a></p>
+</body>
+</html>
