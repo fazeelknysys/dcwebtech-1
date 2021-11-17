@@ -3,5 +3,6 @@
   "contact": "090078601",
   "email": "abcd@def.com",
   "bannerTitle": "Testing the dynamic functionality.",
-  "bannerSubtitle": "Tesing the application."
+  "bannerSubtitle": "Tesing the application.",
+  "buttonText":""
 }

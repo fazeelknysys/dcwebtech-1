@@ -27,6 +27,15 @@ collections:
           - name: "email"
             label: "Email"
             widget: "string"
+   
+  - name: Change Button text and link
+    label: Button text and link
+    files:
+      - file: public/logo.json
+        fields:
+          - name: "buttonText"
+            label: "Button Text"
+            widget: "string"
 
   - name: title and subtitle
     label: Title and Subtitle
@@ -54,7 +63,7 @@ collections:
               widget: "image"
               choose_url: false
 
-  - name: Another blog
+  # - name: Another blog
     label: Another Blog
     folder: Another blog
     create: true
