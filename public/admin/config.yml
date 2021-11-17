@@ -8,7 +8,7 @@ media_folder: "public/assets/img"
 public_folder: "/assets/img"
 
 collections:
-  - name: Banner Image button Text and Link
+  - name: Banner
     label: Banner Image button Text and Link
     files:
       - file: public/logo.json
