@@ -2,6 +2,6 @@
   "logo_Url": "/assets/img/180.png",
   "contact": "090078601",
   "email": "abcd@def.com",
-  "bannerTitle" : "",
-  "bannerSubtitle": ""
+  "bannerTitle": "Testing the dynamic functionality.",
+  "bannerSubtitle": "Tesing the application."
 }
