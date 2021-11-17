@@ -11,7 +11,7 @@ class Home extends Component {
         return (
             <Fragment>
                 <MetaTags>
-                    <title>Onitir - React Template | {pagelocation}</title>
+                    <title>DcWeb Tech | {pagelocation}</title>
                     <meta
                         name="description"
                         content="#"
