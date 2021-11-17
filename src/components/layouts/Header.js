@@ -52,7 +52,7 @@ class Header extends HeaderComponent {
                         <div className="d-flex align-items-center justify-content-between">
                             <nav className="main-menu">
                                 <div className="logo">
-                                    <Link to="/"><img src={process.env.PUBLIC_URL + this.state.logo_Url} alt="logo" /></Link>
+                                    <Link to="/"><img src={"/static" + this.state.logo_Url} alt="logo" /></Link>
                                 </div>
                                 <div className="menu-items">
                                     <ul>
