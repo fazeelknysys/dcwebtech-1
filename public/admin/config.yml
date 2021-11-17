@@ -1,4 +1,5 @@
 backend:
+  #name: test-repo
   name: git-gateway
   #repo: https://github.com/omerknysys/dcwebtech
   branch:  master
@@ -7,6 +8,20 @@ media_folder: "public/assets/img"
 public_folder: "/assets/img"
 
 collections:
+  - name: Link Button To other Page
+    label: Link Button To Other Page
+    files:
+      - file: public/logo.json
+        name: Link Button To other Page
+        label: 'Link Button To other Page'
+        fields:
+          - name: "buttonLink"
+            label: "Link Button To other Page"
+            widget: "select"
+            options:
+              - { label: "Why-US", value: "/whyus" }
+              - { label: "Contact", value: "/contact" }
+              - { label: "Services", value: "/services" }
   - name: contact
     label: Contact Number
     files:

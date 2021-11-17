@@ -10,7 +10,8 @@ class Banner extends Component {
         this.state = {
           bannerTitle: "",
           bannerSubtitle: "",
-          buttonText: ""
+          buttonText: "",
+          buttonLink:""
         };
     }
 
@@ -19,7 +20,7 @@ class Banner extends Component {
 
 
         const a =  fetch("./logo.json").then(response => response.json())
-        .then((temp1)=> {this.setState({bannerTitle:temp1.bannerTitle,bannerSubtitle:temp1.bannerSubtitle,buttonText:temp1.buttonText});  
+        .then((temp1)=> {this.setState({bannerTitle:temp1.bannerTitle,bannerSubtitle:temp1.bannerSubtitle,buttonText:temp1.buttonText,buttonLink:temp1.buttonLink});  
     });
    
         console.log('output',a);
@@ -53,7 +54,7 @@ class Banner extends Component {
                                             <p>{this.state.bannerSubtitle}</p>
                                             <div className="btn-wrap">
                                                 {/* <Link to="/contact" className="main-btn btn-filled">Get Started Now</Link> */}
-                                                <Link to="/contact" className="main-btn btn-filled">{this.state.buttonText}</Link>
+                                                <Link to={this.state.buttonLink} className="main-btn btn-filled">{this.state.buttonText}</Link>
                                                 <Link to="/about" className="main-btn btn-borderd">Learn More</Link>
                                             </div>
                                         </div>
