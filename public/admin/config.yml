@@ -32,7 +32,7 @@ collections:
   - name: logo_Url
     label: Logo
     files:
-        - file: public/design.json
+        - file: public/logo.json
           name: logo_Url
           label: "Logo Settings"
           folder: "public/assets/img"
