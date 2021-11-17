@@ -19,7 +19,24 @@ collections:
           - name: "contact"
             label: "Contact Number"
             widget: "string"   
+  - name: email
+    label: Email 
+    files:
+      - file: public/logo.json
+        name: email
+        label: 'Email'
+        fields:
+          - name: "email"
+            label: "Email"
+            widget: "string"
+
+
+
   
+
+
+
+
   - name: Another blog
     label: Another Blog
     folder: Another blog

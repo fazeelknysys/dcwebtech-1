@@ -11,14 +11,17 @@ class Header extends HeaderComponent {
     constructor(props) {
         super(props);
         this.state = {
-          contact: ""
+          contact: "",
+          email: ""
         };
     }
     render() {
         const stickyheader = this.state.isTop ? 'sticky' : '';
-        fetch("./logo.json").then(response => response.json())
-        .then((temp1)=> {this.setState({contact:temp1.contact});});
+      const a =  fetch("./logo.json").then(response => response.json())
+        .then((temp1)=> {this.setState({contact:temp1.contact,email:temp1.email});  
+    });
    
+        console.log('output',a);
         
         return (
 
@@ -29,7 +32,7 @@ class Header extends HeaderComponent {
                         <div className="row align-items-center">
                             <div className="col-md-6 col-sm-7">
                                 <ul className="contact-list">
-                                    <li><Link to="#">info@appdevtec.com</Link></li>
+                                    <li><Link to="#">{this.state.email}</Link></li>
                                     <li><Link to="#">{this.state.contact}</Link></li>
                                 </ul>
                             </div>
