@@ -8,20 +8,25 @@ media_folder: "public/assets/img"
 public_folder: "/assets/img"
 
 collections:
-  - name: Link Button To other Page
-    label: Link Button To Other Page
+  - name: Banner Image button Text and Link
+    label: Banner Image button Text and Link
     files:
       - file: public/logo.json
-        name: Link Button To other Page
-        label: 'Link Button To other Page'
+        name: Banner Image button Text and Link
+        label: 'Banner Image button Text and Link'
         fields:
+          - name: "buttonText"
+            label: "Button Text"
+            widget: "string"
+            required: false
           - name: "buttonLink"
-            label: "Link Button To other Page"
+            label: "Banner Image button Text and Link"
             widget: "select"
             options:
               - { label: "Why-US", value: "/whyus" }
               - { label: "Contact", value: "/contact" }
               - { label: "Services", value: "/services" }
+            required: false
   - name: contact
     label: Contact Number
     files:
@@ -31,16 +36,6 @@ collections:
         fields:
           - name: "contact"
             label: "Contact Number"
-            widget: "string"
-  - name: Change Button Text
-    label: Button Text Change
-    files:
-      - file: public/logo.json
-        name: Button Text
-        label: 'Text Button'
-        fields:
-          - name: "buttonText"
-            label: "Button Text"
             widget: "string"
   - name: email
     label: Email
@@ -79,15 +74,6 @@ collections:
               widget: "image"
               choose_url: false
 
-  - name: Another blog
-    label: Another Blog
-    folder: Another blog
-    create: true
-    fields:
-      - { name: path, label: Path }
-      - { name: date, label: Date, widget: datetime }
-      - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }
 
   - name: settings
     label: Settings
