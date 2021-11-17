@@ -8,7 +8,7 @@ public_folder: "/assets/img"
 
 collections:
   - name: contact
-    label: Contact Number 
+    label: Contact Number
     files:
       - file: public/logo.json
         name: contact
@@ -16,9 +16,9 @@ collections:
         fields:
           - name: "contact"
             label: "Contact Number"
-            widget: "string"   
+            widget: "string"
   - name: email
-    label: Email 
+    label: Email
     files:
       - file: public/logo.json
         name: email
@@ -27,6 +27,20 @@ collections:
           - name: "email"
             label: "Email"
             widget: "string"
+
+  - name: title and subtitle
+    label: Title and Subtitle
+    files:
+      - file: public/logo.json
+        name: title and subtitle
+        label: 'Title and Subtitle'
+        fields:
+          - name: "bannerTitle"
+            label: "Banner Title"
+            widget: "string"
+          - name : "bannerSubtitle"
+            label : "Banner Subtitle"
+            widget : "string"
   - name: logo_Url
     label: Logo
     files:
@@ -48,7 +62,7 @@ collections:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }  
+      - { name: body, label: Body, widget: markdown }
 
   - name: settings
     label: Settings
@@ -100,4 +114,3 @@ collections:
                 name: type
                 label: 'Mime Type'
 
-  

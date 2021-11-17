@@ -4,7 +4,25 @@ import Slider from 'react-slick';
 import mainbanner from '../../../data/mainbanner.json';
 
 class Banner extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+          bannerTitle: "",
+          bannerSubtitle: ""
+        };
+    }
+
+
     render() {
+
+
+        const a =  fetch("./logo.json").then(response => response.json())
+        .then((temp1)=> {this.setState({bannerTitle:temp1.bannerTitle,bannerSubtitle:temp1.bannerSubtitle});  
+    });
+   
+        console.log('output',a);
+
         const settings = {
             infinite: true,
             autoplay: true,
@@ -30,8 +48,8 @@ class Banner extends Component {
                                 <div className="row extra-left">
                                     <div className="col-lg-8">
                                         <div className="banner-text">
-                                            <h1>{item.title}</h1>
-                                            <p>{item.subtext}</p>
+                                            <h1>{this.state.bannerTitle}</h1>
+                                            <p>{this.state.bannerSubtitle}</p>
                                             <div className="btn-wrap">
                                                 <Link to="/contact" className="main-btn btn-filled">Get Started Now</Link>
                                                 <Link to="/about" className="main-btn btn-borderd">Learn More</Link>
