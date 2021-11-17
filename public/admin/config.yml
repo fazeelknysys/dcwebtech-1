@@ -35,7 +35,7 @@ collections:
         - file: public/logo.json
           name: logo_Url
           label: "Logo Settings"
-          folder: "public/assets/img"
+          folder: "static/assets/"
           fields:
             - name: "logo_Url"
               label: "Logo URL"
