@@ -29,13 +29,19 @@ collections:
           - name: "email"
             label: "Email"
             widget: "string"
-
-
-
-  
-
-
-
+  - name: logo_Url
+    label: Logo
+    files:
+        - file: public/design.json
+          name: logo_Url
+          label: "Logo Settings"
+          folder: "public/assets/img"
+          fields:
+            - name: "logo_Url"
+              label: "Logo URL"
+              widget: "image"
+              choose_url: false
+              default: "public/assets/img/logo.png"
 
   - name: Another blog
     label: Another Blog

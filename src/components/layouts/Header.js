@@ -12,13 +12,14 @@ class Header extends HeaderComponent {
         super(props);
         this.state = {
           contact: "",
-          email: ""
+          email: "",
+          logo_Url:""
         };
     }
     render() {
         const stickyheader = this.state.isTop ? 'sticky' : '';
       const a =  fetch("./logo.json").then(response => response.json())
-        .then((temp1)=> {this.setState({contact:temp1.contact,email:temp1.email});  
+        .then((temp1)=> {this.setState({contact:temp1.contact,email:temp1.email,logo_Url:temp1.logo_Url});  
     });
    
         console.log('output',a);
@@ -51,7 +52,7 @@ class Header extends HeaderComponent {
                         <div className="d-flex align-items-center justify-content-between">
                             <nav className="main-menu">
                                 <div className="logo">
-                                    <Link to="/"><img src={process.env.PUBLIC_URL + "/assets/img/logo.png"} alt="logo" /></Link>
+                                    <Link to="/"><img src={process.env.PUBLIC_URL + this.state.logo_Url} alt="logo" /></Link>
                                 </div>
                                 <div className="menu-items">
                                     <ul>
