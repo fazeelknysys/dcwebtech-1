@@ -7,8 +7,20 @@ import Canvas from './Canvas';
 import Mobilemenu from './Mobilemenu';
 
 class Headerthree extends HeaderComponent {
+    constructor(props) {
+        super(props);
+        this.state = {
+          logo_Url:""
+        };
+    }
     render() {
         const stickyheader = this.state.isTop ? 'sticky' : '';
+        const a =  fetch("./logo.json").then(response => response.json())
+        .then((temp1)=> {this.setState({logo_Url:temp1.logo_Url});  
+    });
+   
+        console.log('output',a);
+     
         return (
             <header className={"header-absolute header-three sticky-header " + stickyheader} id="can-sticky">
                 <div className="container-fluid custom-container-two">
@@ -17,8 +29,8 @@ class Headerthree extends HeaderComponent {
                             <nav className="main-menu">
                                 <div className="logo">
                                     <Link to="/">
-                                        <img src={process.env.PUBLIC_URL + "/assets/img/logo-white.png"} alt="logo" className="normal-logo" />
-                                        <img src={process.env.PUBLIC_URL + "/assets/img/logo.png"} alt="logo" className="sticky-logo" />
+                                        <img src={process.env.PUBLIC_URL + this.state.logo_Url} alt="logo" className="normal-logo" />
+                                        <img src={process.env.PUBLIC_URL + this.state.logo_Url} alt="logo" className="sticky-logo" />
                                     </Link>
                                 </div>
                                 <div className="menu-items">
