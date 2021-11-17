@@ -41,7 +41,6 @@ collections:
               label: "Logo URL"
               widget: "image"
               choose_url: false
-              default: "public/assets/img/logo.png"
 
   - name: Another blog
     label: Another Blog
