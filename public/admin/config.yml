@@ -3,10 +3,8 @@ backend:
   #repo: https://github.com/omerknysys/dcwebtech
   branch:  master
 
-# media_folder: "public/images"
-# public_folder: "images"
-media_folder: static/assets
-public_folder: /assets
+media_folder: "public/assets/img"
+public_folder: "/assets/img"
 
 collections:
   - name: contact
@@ -35,7 +33,7 @@ collections:
         - file: public/logo.json
           name: logo_Url
           label: "Logo Settings"
-          folder: "static/assets"
+          folder: "public/assets/img"
           fields:
             - name: "logo_Url"
               label: "Logo URL"
