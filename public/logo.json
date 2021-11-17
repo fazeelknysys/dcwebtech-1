@@ -4,6 +4,6 @@
   "email": "abcd@def.com",
   "bannerTitle": "Testing the dynamic functionality.",
   "bannerSubtitle": "Tesing the application.",
-  "buttonText":"",
-  "buttonLink":""
+  "buttonText": "Will route to services",
+  "buttonLink": "/services"
 }
