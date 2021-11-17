@@ -17,6 +17,16 @@ collections:
           - name: "contact"
             label: "Contact Number"
             widget: "string"
+  - name: Change Button Text
+    label: Button Text Change
+    files:
+      - file: public/logo.json
+        name: Button Text
+        label: 'Text Button'
+        fields:
+          - name: "buttonText"
+            label: "Button Text"
+            widget: "string"
   - name: email
     label: Email
     files:
