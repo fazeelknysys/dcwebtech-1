@@ -6,5 +6,5 @@
   "bannerSubtitle": "Using the latests technologies like React and Laravel",
   "buttonText": "Will route to services",
   "buttonLink": "/services",
-  "bannerImg":""
+  "bannerImg": "/assets/img/abc.jpg"
 }
