@@ -4,7 +4,7 @@
   "buttonLink": "/services",
   "bannerTitle": "We build web & mobile applications",
   "bannerImgabout": "/assets/img/abc.jpg",
-  "bannerImg": "",
+  "bannerImg": "/assets/img/abc.jpg",
   "logo_Url": "/assets/img/dc-new-logo-2-.png",
   "email": "letstalk@dcwebtech.com",
   "buttonText": "Will route to services"
