@@ -19,8 +19,17 @@ class Header extends HeaderComponent {
     render() {
         const stickyheader = this.state.isTop ? 'sticky' : '';
       const a =  fetch("./logo.json").then(response => response.json())
-        .then((temp1)=> {this.setState({contact:temp1.contact,email:temp1.email,logo_Url:temp1.logo_Url});  
+        .then((temp1)=> {this.setState({logo_Url:temp1.logo_Url});  
     });
+    const b=fetch("./contact.json").then(response=>response.json())
+    .then((temp2)=>{
+        this.setState({contact:temp2.contact})
+    })
+
+    const c=fetch("./email.json").then(response=>response.json())
+    .then((temp3)=>{this.setState({email:temp3.email});
+    
+    })
    
         console.log('output',a);
         
