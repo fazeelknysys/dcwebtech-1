@@ -73,6 +73,19 @@ collections:
               label: "Logo URL"
               widget: "image"
               choose_url: false
+  
+  - name: Banner Image
+    label: Banner Image
+    files:
+        - file: public/logo.json
+          name: Banner Image
+          label: "Logo Settings"
+          folder: "public/assets/img"
+          fields:
+            - name: "bannerImg"
+              label: "Banner Image"
+              widget: "image"
+              choose_url: false
 
 
   - name: settings

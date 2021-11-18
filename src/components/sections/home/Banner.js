@@ -11,7 +11,8 @@ class Banner extends Component {
           bannerTitle: "",
           bannerSubtitle: "",
           buttonText: "",
-          buttonLink:""
+          buttonLink:"",
+          bannerImg:""
         };
     }
 
@@ -20,7 +21,7 @@ class Banner extends Component {
 
 
         const a =  fetch("./logo.json").then(response => response.json())
-        .then((temp1)=> {this.setState({bannerTitle:temp1.bannerTitle,bannerSubtitle:temp1.bannerSubtitle,buttonText:temp1.buttonText,buttonLink:temp1.buttonLink});  
+        .then((temp1)=> {this.setState({bannerTitle:temp1.bannerTitle,bannerSubtitle:temp1.bannerSubtitle,buttonText:temp1.buttonText,buttonLink:temp1.buttonLink,bannerImg:temp1.bannerImg});  
     });
    
         console.log('output',a);
@@ -42,7 +43,7 @@ class Banner extends Component {
             ]
         }
         return (
-            <section className="banner-section" style={{ backgroundImage: "url(" + process.env.PUBLIC_URL + "/assets/img/banner/01.jpg)" }}>
+            <section className="banner-section" style={{ backgroundImage: "url(" + process.env.PUBLIC_URL + this.state.bannerImg }}>
                 <Slider {...settings} className="slider-active" id="bannerSliderOne">
                     {mainbanner.map((item, i) => (
                         <div className="single-banner" key={i}>

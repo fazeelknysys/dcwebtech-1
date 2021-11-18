@@ -5,5 +5,6 @@
   "bannerTitle": "Testing the dynamic functionality.",
   "bannerSubtitle": "Tesing the application.",
   "buttonText": "Will route to services",
-  "buttonLink": "/services"
+  "buttonLink": "/services",
+  "bannerImg":""
 }
