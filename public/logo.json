@@ -1,11 +1,11 @@
 {
+  "contact": "(716) 536-2344",
+  "bannerSubtitle": "Using the latests technologies like React and Laravel",
+  "buttonLink": "/services",
+  "bannerTitle": "We build web & mobile applications",
+  "bannerImgabout": "",
+  "bannerImg": "/assets/img/abc.jpg",
   "logo_Url": "/assets/img/dc-new-logo-2-.png",
   "email": "letstalk@dcwebtech.com",
-  "contact": "(716) 536-2344",
-  "bannerTitle": "We build web & mobile applications",
-  "bannerSubtitle": "Using the latests technologies like React and Laravel",
-  "buttonText": "Will route to services",
-  "buttonLink": "/services",
-  "bannerImg":"",
-  "bannerImgabout":""
+  "buttonText": "Will route to services"
 }
