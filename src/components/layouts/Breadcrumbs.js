@@ -2,9 +2,19 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 class Breadcrumbs extends Component {
+    constructor (props){
+        super(props);
+        this.state={
+            bannerImgabout:""
+        };
+    }
     render() {
+        const a =  fetch("./logo.json").then(response => response.json())
+        .then((temp1)=> {this.setState({bannerImgabout:temp1.bannerImgabout});  
+    });
+
         return (
-            <section className="breadcrumb-section" style={{ backgroundImage: "url(" + process.env.PUBLIC_URL + "/assets/img/breadcrumb.jpg)" }}>
+            <section className="breadcrumb-section" style={{ backgroundImage: process.env.PUBLIC_URL + this.state.bannerImgabout  }}>
                 <div className="container">
                     <div className="breadcrumb-text">
                         <h1>{this.props.breadcrumb.pagename}</h1>

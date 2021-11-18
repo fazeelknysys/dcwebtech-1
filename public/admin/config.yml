@@ -79,13 +79,19 @@ collections:
     files:
         - file: public/logo.json
           name: Banner Image
-          label: "Logo Settings"
+          label: "Banner Images"
           folder: "public/assets/img"
           fields:
             - name: "bannerImg"
               label: "Banner Image"
               widget: "image"
               choose_url: false
+              required : false
+            - name: "bannerImgabout"
+              label: "Banner Image About page"
+              widget: "image"
+              choose_url: false
+              required: false
 
 
   - name: settings
