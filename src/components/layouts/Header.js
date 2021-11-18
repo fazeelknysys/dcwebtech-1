@@ -32,10 +32,7 @@ class Header extends HeaderComponent {
         }); 
     }
     render() {
-        const stickyheader = this.state.isTop ? 'sticky' : '';
-   
-        console.log('output',a);
-        
+        const stickyheader = this.state.isTop ? 'sticky' : '';    
         return (
 
     
