@@ -16,11 +16,23 @@ class Header extends HeaderComponent {
           logo_Url:""
         };
     }
+    componentDidMount() {
+        this.fetchData();
+    }
+    
+    fetchData = () => { 
+        fetch("./logo.json").then(response => response.json())
+        .then((temp1)=> {
+            this.setState({ 
+                contact: temp1.contact,
+                logo_Url: temp1.logo_url,
+                email: temp1.email
+
+            });
+        }); 
+    }
     render() {
         const stickyheader = this.state.isTop ? 'sticky' : '';
-      const a =  fetch("./logo.json").then(response => response.json())
-        .then((temp1)=> {this.setState({contact:temp1.contact,email:temp1.email,logo_Url:temp1.logo_Url});  
-    });
    
         console.log('output',a);
         
